@@ -1,0 +1,7 @@
+[pytest]
+testpaths = ["tests"]
+addopts = ["-q"]
+pythonpath = ['src']
+env = [
+    "SENTENCE_TRANSFORMER_PATH="
+]
