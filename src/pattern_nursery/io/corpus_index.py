@@ -221,6 +221,7 @@ class CorpusIndexSqlite:
                             continue
                     return
 
+                logger.warning(f'Found duplicate id(s): use `--on-duplicate-id "skip"` to skip dupes.')
                 # find which one is duplicate
                 ids = [b[0] for b in batch]
                 seen = set()
